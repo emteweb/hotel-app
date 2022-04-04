@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/hotels' element={<HotelPage />} />
+        <Route path='/' element={<HotelPage />} />
       </Routes>
     </div>
   );
