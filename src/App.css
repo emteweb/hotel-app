@@ -63,26 +63,45 @@ margin-bottom: 50px;
   font-size: 28px;
   color: #35b0e6;
   font-weight: 600;
+  text-align: center;
+}
+
+.hotel-title{
+  font-size: 28px;
+  color: #35b0e6;
+  font-weight: 600;
+  text-align: left;
 }
 
 .roomList{
+  padding-top: 50px;
   font-size: 20px;
   color: #35b0e6;
   font-weight: 600;
+  text-align: left;
 }
 
 .roomDesc{
   text-align: left;
 }
 
+.hotelDesc{
+  padding-top: 20px;
+  text-align: left;
+}
+
 .descBold{
   font-weight: 600;
-}
-.searchbox-rating{
-  margin-left: 50px;
 }
 
 .pin{
   font-size: 40px;
   color: #2596be;
 }
+
+#wrapper{
+  display:flex;
+  justify-content:space-between;
+  
+}
+

@@ -60,13 +60,26 @@ const HotelDetails = (props) => {
                                 </div>
                             }
                         </div>
-                        <div className="col-md-8">
+                        <div className="col">
                             <div className="card-body">
-                                <h3 className="card-title searchbox-title">{props.hotel.name}
-                                    <span className='starability-result searchbox-rating' data-rating={props.hotel.starRating}></span></h3>
-                                <p className="card-text">{props.hotel.address1} - {props.hotel.postcode} - {props.hotel.town}</p>
-                                <p className="card-text"><small class="text-muted">{props.hotel.description}</small></p>
+                                
+                                <div id='wrapper' className="row" >
+                                    <div id='c1' className="col-6" >
+                                        <h3 className="card-title hotel-title">{props.hotel.name}</h3>
+                                    </div>
+                                    <div id='c2' className="col-6 hotel-rating starability-result" data-rating={props.hotel.starRating}>
+                                        {/* <span className='starability-result' data-rating={props.hotel.starRating}></span> */}
+                                    </div>
+                                </div>
 
+
+                                <div className="row">
+                                    <div className="col">
+                                        <p className="card-text hotelDesc" >{props.hotel.address1} - {props.hotel.postcode} - {props.hotel.town}</p>
+                                        <p className="card-text hotelDesc" ><small class="text-muted">{props.hotel.description}</small></p>
+                                    </div>
+                                </div>
+                                
                                 <RoomList roomId={props.hotel.id} />
 
                             </div>
