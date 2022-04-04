@@ -62,9 +62,9 @@ const HotelDetails = (props) => {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h3 className="card-title">{props.hotel.name} - ID: {props.hotel.id}</h3>
-                                <p class="starability-result" data-rating={props.hotel.starRating}></p>
-                                <p className="card-text">{props.hotel.address1}</p>
+                                <h3 className="card-title searchbox-title">{props.hotel.name}
+                                    <span className='starability-result searchbox-rating' data-rating={props.hotel.starRating}></span></h3>
+                                <p className="card-text">{props.hotel.address1} - {props.hotel.postcode} - {props.hotel.town}</p>
                                 <p className="card-text"><small class="text-muted">{props.hotel.description}</small></p>
 
                                 <RoomList roomId={props.hotel.id} />

@@ -27,7 +27,8 @@ const HotelPage = () => {
             setAdults(adults + 1)
         }
         else {
-            setAdults(adults - 1)
+            if (adults > 0)
+                setAdults(adults - 1)
         }
     }
 
@@ -36,7 +37,8 @@ const HotelPage = () => {
             setChildren(children + 1)
         }
         else {
-            setChildren(children - 1)
+            if (children > 0)
+                setChildren(children - 1)
         }
     }
 

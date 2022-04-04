@@ -20,7 +20,7 @@ const RoomList = (props) => {
 
     return (
         <>
-            <h5>Available rooms:</h5>
+            <h5 className='roomList'>Available rooms:</h5>
             {rooms.map((room, i) => (
                 <RoomDetails roomData={room} index={i} />
             ))}

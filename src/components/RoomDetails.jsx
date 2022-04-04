@@ -25,14 +25,12 @@ const RoomDetails = (props) => {
                             </h2>
                             <div id={`flush-collapse${i}`} className="accordion-collapse collapse" aria-labelledby={`flush-heading${i}`} data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body">
-                                    <div>
-                                        <h5>Room type: {bedConfiguration}</h5>
-                                        <ul>
-                                            <li>Max adults: {occupancy.maxAdults}</li>
-                                            <li>Max children: {occupancy.maxChildren}</li>
-                                        </ul>
-                                        <p>{longDescription}</p>
-                                    </div>
+                                <div className='roomDesc'>
+                                        <h5 style={{textAlign: 'center'}}>Room type:  {bedConfiguration}</h5>
+                                        <p><span className='descBold'>Max number of adults</span> - {occupancy.maxAdults}</p>
+                                        <p><span className='descBold'>Max number of children</span> - {occupancy.maxChildren}</p>
+                                        <p><span className='descBold'>Description:</span> {longDescription}</p>
+                 </div>
                                 </div>
                             </div>
                         </div>

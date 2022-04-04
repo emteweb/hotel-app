@@ -44,7 +44,42 @@ margin-bottom: 50px;
 }
 
 .searchbox{
-  margin-left: 250px;
+  padding-top: 20px;
+}
+
+.searchbox-spacing{
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+
+.searchbtn{
+  min-width: 30px;
+}
+
+.searchbox-title{
+  font-size: 28px;
+  color: #35b0e6;
+  font-weight: 600;
+}
+
+.roomList{
+  font-size: 20px;
+  color: #35b0e6;
+  font-weight: 600;
+}
+
+.roomDesc{
+  text-align: left;
+}
+
+.descBold{
+  font-weight: 600;
+}
+.searchbox-rating{
+  margin-left: 50px;
 }
 
 .pin{

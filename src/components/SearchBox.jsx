@@ -9,13 +9,34 @@ const SearchBox = () => {
             <div className="container">
                 <HotelContext.Consumer>
                     {searchBox => (
-                        <div className='counter'>
-                            <nav className="navbar navbar-light bg-light">
-                                <div className="container-fluid">
-                                    <span className="navbar-brand mb-0 h1">
+                        <>
+                            <div className='searchbox-title'>Choose you search criteria:</div>
+                            <ul class="nav justify-content-center searchbox">
+                                <li class="nav-item">
+                                    <a className="nav-link">
+                                        <span className='searchbox-spacing'>Adults</span>
+                                        <span className='searchbox-spacing'><button type="button" className="btn btn-sm btn-success searchbtn"
+                                            onClick={() => searchBox.countAdults("plus")}>+</button></span>
+                                        <span className='searchbox-spacing'>{searchBox.adults}</span>
+                                        <span><button type="button" className="btn btn-sm btn-danger searchbtn"
+                                            onClick={() => searchBox.countAdults("minus")}>-</button></span>
+                                    </a>
+                                </li>
 
-                                        <fieldset className="starability-basic">
-                                            <span>Choose rating: </span>
+                                <li class="nav-item">
+                                    <a className="nav-link">
+                                        <span className='searchbox-spacing'>Children</span>
+                                        <span className='searchbox-spacing'><button type="button" className="btn btn-sm btn-success searchbtn"
+                                            onClick={() => searchBox.countChildren("plus")}>+</button></span>
+                                        <span className='searchbox-spacing'>{searchBox.children}</span>
+                                        <span><button type="button" className="btn btn-sm btn-danger searchbtn"
+                                            onClick={() => searchBox.countChildren("minus")}>-</button></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a className="nav-link" aria-current="page">
+
+                                        <fieldset className="starability-basic searchbox-rating">
                                             <input onChange={() => searchBox.getRate(0)} type="radio" id="no-rate" className="input-no-rate" name="rating" value="1" checked aria-label="No rating." />
                                             <input onChange={() => searchBox.getRate(1)} type="radio" id="first-rate1" name="rating" value="1" />
                                             <label htmlFor="first-rate1" title="Terrible">1 star</label>
@@ -27,34 +48,22 @@ const SearchBox = () => {
                                             <label htmlFor="first-rate4" title="Very good">4 stars</label>
                                             <input onChange={() => searchBox.getRate(5)} type="radio" id="first-rate5" name="rating" value="5" />
                                             <label htmlFor="first-rate5" title="Amazing">5 stars</label>
-
                                         </fieldset>
-                                        <div className='searchbox'>
-                                            <span className='counter'>Adults:</span>
-                                            <span className='counter'><button type="button" className="btn btn-success"
-                                                onClick={() => searchBox.countAdults("plus")}>+</button></span>
-                                            <span className='counter'>{searchBox.adults}</span>
-                                            <span className='counter'><button type="button" className="btn btn-danger"
-                                                onClick={() => searchBox.countAdults("minus")}>-</button></span>
+                                    </a>
+                                </li>
+                            </ul>
 
-                                            <span className='counter'>Children:</span>
-                                            <span className='counter'><button type="button" className="btn btn-success"
-                                                onClick={() => searchBox.countChildren("plus")}>+</button></span>
-                                            <span>{searchBox.children}</span>
-                                            <span className='counter'><button type="button" className="btn btn-danger"
-                                                onClick={() => searchBox.countChildren("minus")}>-</button></span>
-                                        </div>
-                                    </span>
-                                </div>
-                            </nav>
-                        </div>
 
+                        </>
                     )}
                 </HotelContext.Consumer>
             </div>
+
 
         </>
     );
 }
 
 export default SearchBox;
+
+
