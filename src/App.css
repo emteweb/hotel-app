@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.counter{
+  padding: 20px;
+  font-weight: 600;
+margin-bottom: 50px;
+}
+
+.searchbox{
+  margin-left: 250px;
+}
+
+.pin{
+  font-size: 40px;
+  color: #2596be;
+}
