@@ -6,4 +6,6 @@ https://obmng.dbm.guestline.net/api/hotels?collection-id=OBMNG
 This returns a list of hotels, with an Id. The Id can be used to query this query for the room types:
 
 
-https://obmng.dbm.guestline.net/api/roomRates/OBMNG/[hotelId] for example, https://obmng.dbm.guestline.net/api/roomRates/OBMNG/OBMNG1
+https://obmng.dbm.guestline.net/api/roomRates/OBMNG/[hotelId] 
+for example, 
+https://obmng.dbm.guestline.net/api/roomRates/OBMNG/OBMNG1
