@@ -62,7 +62,7 @@ const HotelPage = () => {
                 }
             }
             >
-                <HotelMap />
+                {/* <HotelMap /> */}
                 <SearchBox />
                 <HotelList />
             </HotelContext.Provider>
